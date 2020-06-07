@@ -90,7 +90,7 @@ FileS3.rb, FileLocal.rb e FileBlob.rb
 
 Estrutura de diretórios
 
-![Diretorios](https://github.com/rruy/ruby-dev-test-1/public/infos/Diretories.jpg?raw=true)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/Diretories.jpg?raw=true)
 
 Classe responsável por criar a lista de diretórios e subdiretórios com os arquivos para o front-end:
 ```
@@ -98,14 +98,14 @@ FileStorageHelper.rb
 ```
 
 Visão geral
-![Diretorios](https://github.com/rruy/ruby-dev-test-1/public/infos/ViewAll.jpg?raw=true)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/ViewAll.jpg?raw=true)
 
 
 Para adicionar mais arquivos em um diretório
-![Diretorios](https://github.com/rruy/ruby-dev-test-1/public/infos/AddFileToFolder.jpg?raw=true)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/AddFileToFolder.jpg?raw=true)
 
 Para ver o arquivo
-![Diretorios](https://github.com/rruy/ruby-dev-test-1/public/infos/ViewFile.jpg?raw=true)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/ViewFile.jpg?raw=true)
 
 ## Author
 
