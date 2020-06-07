@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClickSign</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <%= yield(:head) %>
+  </head>
+
+  <body>
+    <div class="wrapper">
+  <nav>
+    <header>
+      <span></span>
+      Ricardo Ruy
+      <a href="/"></a>
+    </header>
+
+    <ul>
+      <li><span>Storage</span></li>
+      <li><a href="/" class="active">Files</a></li>
+      <li><span>Other</span></li>
+      <li><a href="https://www.linkedin.com/in/ricardo-guinalia-ruy-18674467/" target="_blank">Linkedin</a></li>
+      <li><a href="https://github.com/rruy/ruby-dev-test-1"  target="_blank">Github</a></li>
+      <li><a>Info</a></li>
+    </ul>
+
+  </nav>
+  <main>
+    <h1> <img class="img-responsive" alt="Logo ClickSign" src="https://cdn.clicksign.com/assets/brand/logo-clicksign-negative-af64c4d3861e84e96da93cc06e5544d30b70dc8fdb161fe534140287e741aae0.svg" width="8%" ></h1>
+    <div>
+      <%= yield %>
+    </div>
+  </main>
+</div>  
+    <%= yield(:javascripts) %>
+  </body>
+</html>

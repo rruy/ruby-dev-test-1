@@ -1,0 +1,57 @@
+<div class="flex-grid">
+  <div>
+      <div class="hearder" style="margin-bottom: 10px;" >
+        <h2>Folders</h2>
+        <label>File or Folder Selected: <input id="last_action" type="text" size="50" readonly=""></label>
+        <input type="hidden" id="last_action_id" value="0" /> 
+        <button class="btn" id="btnClear">Clear</button>
+        <button class="btn" id="btnFolder">+Add Folder</button>
+        <button class="btn" id="btnUpload">+Add File</button>
+        <button class="btn" id="btnViewFile">View File</button>
+      </div>
+
+      <ul role="tree" aria-labelledby="tree_label">
+        <% @root_folders.each do |root| %>  
+          <%= nodes(root).html_safe %>
+        <% end %>
+      </ul>
+  </div>
+</div>
+
+<!-- The Modal Upload -->
+<div id="modal_upload" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <%= form_for(FileStorage.new, action:"create", controller:"file_storages", html: { :enctype => 'multipart/form-data' }) do |f| %>
+        <input type="hidden" id="folder_id" name="folder_id" value="" /> 
+        <div class="block">
+          <label class="label_input" for="file_to_upload">File:</label>
+          <input type="file" name="file_to_upload" />
+        </div>  
+          <div class="block">
+          <label class="label_input" for="file_type">Storage:</label>
+          <%= select_tag(:file_type, options_for_select([['Local', 'file_local'], ['Blob', 'file_blob'], ['S3', 'file_s3']], 'file_local'))%>
+        </div>  
+        <div class="block">
+          <%= submit_tag 'Save File' %>
+        </div>  
+      <% end %>
+  </div>
+</div>
+
+<!-- The Modal Folder -->
+<div id="modal_folder" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <%= form_for(Folder.new, action:"create", controller:"folders", html: { :enctype => 'multipart/form-data' }) do |f| %>
+        <input type="hidden" id="parent_id" name="folder[parent_id]" value="" /> 
+        <div class="block">
+          <label class="label_input" for="name">Name:</label>
+          <input type="text" name="folder[name]" />
+        </div>  
+        <div class="block">
+          <%= submit_tag 'Save Folder' %>
+        </div>  
+      <% end %>
+  </div>
+</div>
