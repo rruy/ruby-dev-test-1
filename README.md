@@ -90,7 +90,7 @@ FileS3.rb, FileLocal.rb e FileBlob.rb
 
 Estrutura de diretórios
 
-![Diretorios](https://raw.githubusercontent.com/rruy/ruby-dev-test-1/master/public/infos/Diretories.jpg)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/Directories.png?raw=true)
 
 Classe responsável por criar a lista de diretórios e subdiretórios com os arquivos para o front-end:
 ```
