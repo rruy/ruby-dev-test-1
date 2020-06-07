@@ -37,7 +37,7 @@ Para criar alguns dados de inicialização
 rake db:seed
 ```
 
-#Configuração do S3
+## Configuração do S3
 
 Será necessário configurar as chaves de acesso do S3 no arquivo .env na raiz do projeto. Esse passo é importante porque sem essa configuração o projeto não vai rodar corretamente e os testes da classe FileS3 também vão gerar erros.
 ```
