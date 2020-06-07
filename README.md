@@ -98,14 +98,14 @@ FileStorageHelper.rb
 ```
 
 Visão geral
-![Diretorios](https://raw.githubusercontent.com/rruy/ruby-dev-test-1/master/public/infos/ViewAll.jpg)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/ViewAll.jpg?raw=true)
 
 
 Para adicionar mais arquivos em um diretório
-![Diretorios](https://raw.githubusercontent.com/rruy/ruby-dev-test-1/master/public/infos/AddFileToFolder.jpg)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/AddFileToFolder.jpg?raw=true)
 
 Para ver o arquivo
-![Diretorios](https://raw.githubusercontent.com/rruy/ruby-dev-test-1/master/public/infos/ViewFile.jpg)
+![Diretorios](https://github.com/rruy/ruby-dev-test-1/blob/master/public/infos/ViewFile.jpg?raw=true)
 
 ## Author
 
